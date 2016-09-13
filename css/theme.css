@@ -1,0 +1,589 @@
+/* 
+
+DSSU Bootsrap based frontend framework 
+Version: 0.1
+Date: 2016-09-07
+Owner: Webs Services - Digital Strategy and Services Unit, Department of Health & Human Services.
+
+Notes: 
+This template is currently in beta. Further developments will continue to ensure accurate inclusion & replication of modules/elements available on http://www.health.vic.gov.au.
+In the meantime, please reference http://health.vic.gov.au styles & layout as accuratley as possibly when devloping sites using this framewwork.
+
+*/
+
+/* 
+
+health.vic brand color declarations
+
+Red: #c32026;
+Red dark: #a40d12;
+Red hover: #eb5151;
+Navy: #1a253a;
+Navy 2: #0f182a;
+Blue accent: #2b68b0;
+Light blue: #9aa0ac;
+Dark grey: #343434;
+Body text: #505050;
+Light grey - #eeeeee;
+
+*/
+
+/************* Core styles  *************/
+
+/*@media (min-width: 1355px) {
+  .container {
+    width: 1170px;
+  }
+}*/
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  /*background-color: #eeeeee;*/
+  color: #505050;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #343434;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+.page-header {
+  border-bottom: none;
+}
+
+.content-header {
+  padding-bottom: 20px;
+  color: #666;
+}
+
+a {
+  color: #c32026;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eb5151 ;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.btn-default, .label-default {
+    color: #fff;
+    background-color: #c32026;
+    border-color: #c32026;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #eb5151;
+  border-color: #eb5151;
+}
+
+.btn-primary, .label-primary {
+  background-color: #1C5595;
+}
+
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+/* Jumbotron accent color */
+
+.jumbotron {
+  margin-bottom: 6px;
+}
+
+.container .jumbotron {
+  padding: 36px 42px 50px;
+}
+
+.m-hero-accent {
+    background-color: #2b68b0 !important;
+    color: #fff !important;
+}
+
+.m-hero-accent h3 {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+.m-hero-accent p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.m-hero-accent a {
+  color: #fff;
+}
+
+.m-key-messages ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.m-key-messages li:first-child {
+  margin-top: 10px;
+}
+
+.m-key-messages li {
+  position: relative;
+  margin-top: 20px;
+  padding-left: 45px;
+  font-size: 14px;
+}
+
+.m-key-messages li:before {
+  font-family: 'icomoon';
+  font-size: 30px;
+  content: '\e91e';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -4px;
+  top: -12px;
+}
+
+/************* Layout *************/
+
+.content-container.container {
+  padding-bottom: 90px;
+}
+
+.clear {
+  clear: both;
+}
+
+.content-container {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.l-content {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 36px 42px 50px;
+}
+
+.hm {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.hm.is-light {
+    background-color: #fff;
+}
+
+.hm.hm-bar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.vh, .vhidden, .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+/************* Header  *************/
+
+.head-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #c32026;
+  min-height: 92px;
+}
+
+/* Header Branding */
+
+.brand-container {
+  float: left;
+}
+
+.head-container .container .brand-container .vicgov {
+    width: 96px;
+    height: 56px;
+    margin-right: 30px;
+    margin-bottom: -14px;
+}
+
+.head-container .container .brand-container .doh-desktop {
+    display: inline;
+    margin-bottom: -13px;
+}
+
+@media only screen and (max-width: 767px) {
+.head-container .container .brand-container .vicgov {
+  width: 79px;
+  height: 45px;
+  margin-right: 18px;
+  margin-bottom: -30px;
+  }
+
+  .head-container .container .brand-container .doh-desktop {
+    height: 45px;
+    margin-bottom: -28px;
+  }
+}
+
+/************* Navigation  *************/
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.navbar {
+    position: relative;
+    min-height: 45px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #c32026;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #343434;
+    font-weight: bold;
+    line-height: 1.25;
+    padding: 26px 26px 26px 14px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #c32026;
+}
+
+.navbar-inverse {
+    color: #9aa0ac;
+    /*background-color: #1a253a;*/
+    border-color: #1a253a;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #1a253a;
+    text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9aa0ac;
+    margin-left: 20px;
+}
+
+.navbar-form {
+    border-color: transparent;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+
+#navbar > ul > li:first-child > a {
+  padding-left: 0px;
+}
+
+#navbar.navbar-collapse > ul > li:first-child > a {
+  padding-left: 14px;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #1a253a;
+    border-color: #1a253a;
+}
+
+.list-group-item.active .list-group-item-text, .list-group-item.active:focus .list-group-item-text, .list-group-item.active:hover .list-group-item-text {
+    color: #9aa0ac;
+}
+
+.site-tools li {
+  float: left;
+}
+
+.site-tools {
+  margin-bottom: 0px !important;
+}
+
+.site-tools .login {
+  border-radius: 5px;
+  padding: 5px 12px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+  color: #fff !important;
+  background-color: #0f182a;
+  display: inline-block;
+}
+
+.site-tools .login:hover {
+  background-color: #9aa0ac !important;
+  text-decoration: none;
+}
+
+/************* Search form *************/
+
+.search-form{
+    border-color: transparent;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 50px;
+    width: 54px;
+    border: none;
+    background-color: #a40d12;
+    overflow: hidden;
+    text-indent: 200%;
+    background-position: 50% 50%;
+    padding: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/************* Breadcrumbs  *************/
+
+.breadcrumbs {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    min-height: 36px;
+}
+
+.breadcrumb {
+    padding: 22px 0px 0px 0px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+/************* Footer  *************/
+
+footer {
+    background-color: #1a253a;
+    color: #9aa0ac;
+}
+
+footer a {
+  color: #9aa0ac;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .container {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer .l-container {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+footer .container .nav h3 {
+  color: #fff;
+}
+
+footer .container .nav ul {
+  font-size: 14px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  margin: 0px 0 30px 0px;
+  padding: 0px;
+}
+
+footer .container .nav li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  list-style: none;
+  margin-top: 7px;
+}
+
+.footer .back-to-top {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  text-align: center;
+  width: 40px;
+  padding-top: 20px;
+  font-size: 40px;
+  z-index: 2;
+}
+
+.footer .back-to-top span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer .back-to-top:after, .footer .back-to-top:before {
+  content: '\e938';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-position: 50% 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 0;
+  transition: opacity 0s;
+}
+
+
+
+.footer .legal {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 64em) {
+.footer .legal .auth {
+  float: left;
+  margin: 14px 0;
+}
+
+.footer .legal .copyright {
+  float: right;
+  margin: 14px 0;
+}
+}
+
+/* Sticky footer styles */
+/*html {
+  position: relative;
+  min-height: 100%;
+}
+body {*/
+  /* Margin bottom by footer height */
+  /*margin-bottom: 280px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*height: auto;
+}*/
+
+/************* Carousel  *************/
+
+.carousel-inner {
+    max-height: 450px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    width: 100%;
+}
+
+/************* Forms  *************/
+
+/*.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}*/
+
+/* Two column layout sidebar - class .complementary */
+
+.complementary h3 {
+  margin-top: 0px;
+}
+
+.content-container.container ul{
+  list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+    font-size: 13px;
+
+}
+
+.content-container.container .related-link-list li {
+  margin: 20px 0px 0px 0px;
+  padding: 0;
+  margin-top: 20px;
+  position: relative;
+    font-weight: 700;
+}
+
+.content-container.container .related-link-list li p {
+  margin: 8px 0 0;
+  font-weight: normal !important;
+}
+
+body > div.content-container.container > div.container > div > div > div.col-md-9 > div:nth-child(6) > a {
+  background-color: #c32026;
+}
+
+.link-caret .link-icon, .icon-link-external {
+  padding-left:8px;
+  position: relative;
+  display: inline-block;
+  /*font-size: 20px;*/
+  content: ' ';
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 10px;
+  margin-top: -10px;
+  transition: opacity 0s;
+}
