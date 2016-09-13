@@ -5,4 +5,6 @@ Further developments will continue to ensure accurate inclusion &amp; replicatio
 
 If you require the use of elements which are currently not configured, please contact the team at DSSU.
 
+It is the responsibility of the developer that all end products are level AA (WCAG) compliant.
+
 Websites built using this template must be authorised by Department of Health & Human Services, State Government of Victoria, Australia.
