@@ -577,13 +577,12 @@ body > div.content-container.container > div.container > div > div > div.col-md-
   padding-left:8px;
   position: relative;
   display: inline-block;
-  /*font-size: 20px;*/
   content: ' ';
   width: 20px;
   height: 20px;
 
-  position: absolute;
-  top: 10px;
-  margin-top: -10px;
+  position: relative;
+  top: 4px;
+  /*margin-top: -10px;*/
   transition: opacity 0s;
 }
