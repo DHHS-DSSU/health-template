@@ -247,7 +247,8 @@ a:hover {
   }
 
   .head-container .container .brand-container .doh-desktop {
-    height: 45px;
+    height: 35px;
+    width: auto;
     margin-bottom: -28px;
   }
 }
